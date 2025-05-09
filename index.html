@@ -535,7 +535,7 @@
             emailInput.classList.remove('is-invalid');
             feedbackElement.style.display = 'none';
             
-            fetch('http://13.127.178.34/api/register/initial-user', {
+            fetch('https://backend.havenhues.co.in/api/register/subscriber', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -610,7 +610,7 @@
                 return;
             }
             
-            fetch('http://13.127.178.34/api/feedback/store', {
+            fetch('https://backend.havenhues.co.in/api/feedback/store', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
